@@ -1,0 +1,88 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+a {color: dodgerblue; text-decoration: none;}
+p, li {line-height: 25px;}
+/*客製化內容（自行調整 bsXlider CSS 設定）*/
+.bx-wrapper {/*預設的外框陰影*/
+box-shadow: 0 0 0;/*消去陰影*/
+border:0;/*消去邊框*/ }
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {box-sizing: border-box;}/*無敵星星的部分*/
+body {
+    color: #52514f;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    background-color: #dfdfdf;
+}
+body, h1, h2, h3, p ,ul {
+    margin: 0;/*清除預設的 margin*/
+}
+.wrap {
+    width: 832px;
+    margin-inline: auto;/*區塊左右置中*/
+}
+
+section {
+    background-color: #ffffff;
+    height: 600px;
+    margin-top: 20px;/*間格距離*/
+    padding: 10px 20px;/*調整內邊距*/
+    border-radius: 10px;
+}
+h2 {
+    color: #11110b;
+    font-size: 40px;
+    font-weight: 700;
+}
+header {
+    display: flex;/*橫排*/
+    align-items: center;/*讓Logo 跟 Menu 上下居中*/
+    padding:10px 20px;
+    background-color: rgb(255, 0, 0);
+    position: sticky;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    position:sticky;
+	top:0;
+}
+
+.bxslider{
+    margin-inline: auto;
+}
+a.logo {
+    background-image: url(/image/LOGO.png);
+    width: 120px;
+    height: 40px;
+    background-size: 120px;
+
+}
+
+.menu{
+    background-color: #ff0000;
+    transform-origin: top; 
+}
+
+
+.menu ul {
+    display: flex;/*讓選單也橫排*/
+    gap: 16px;/*關於間格距離的部分*/
+    list-style:none;/*隱藏列表圓點*/
+}
+.menu a {
+    font-size: 20px;
+    padding: 6px 16px;/*把可以點選的範圍撐大*/
+    border-radius: 2px;
+    color: #FFF;
+}
+.menu a:hover {/*滑鼠移上去之後的狀態*/
+    color:#000;
+    background-color: #FFF;
+}
+a.anchor {/*自訂定位點*/
+    position: relative;
+    top: -40px;/*把定位點往上調*/
+    visibility: hidden;/*可見度為零*/
+}
